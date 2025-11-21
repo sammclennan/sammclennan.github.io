@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>document.documentElement.classList.add('hidden');</script> <!-- Eliminate FOUC -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sam McLennan - Developer Portfolio">
+        <title>Sam McLennan | Developer Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+    </head>
+    <body>
+        <header id="navbar" class="navbar">
+            <h1 class="portfolio-logo">
+                <a href="">SM</a>
+            </h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" data-i18n="navBar.home">Home</a></li>
+                    <li><a href="#about-me" data-i18n="navBar.about">About</a></li>
+                    <li><a href="#my-projects" data-i18n="navBar.projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="navBar.contact">Contact</a></li>
+                    <li>
+                        <a href="https://github.com/sammclennan/" target="_blank">
+                            <span data-i18n="navBar.github">GitHub</span>
+                            <svg>
+                                <use href="#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-button-wrapper">
+                <div class="lang-toggle-wrapper">
+                    <button id="lang-dropdown-toggle" class="lang-dropdown-toggle">
+                        <svg>
+                            <use href="#icon-web"></use>
+                        </svg>
+                        <span data-i18n="navBar.languageButton">English</span>
+                    </button>
+                    <ul id="lang-dropdown" class="lang-dropdown hidden">
+                        <li>
+                            <button class="lang-button" data-lang="en">
+                                <img class="lang-icon" src="assets/icons/us-flag.svg" alt="US flag">
+                                <span>English</span>
+                                <svg class="checkmark">
+                                    <use href="#icon-check"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <hr>
+                        <li>
+                            <button class="lang-button" data-lang="jp">
+                                <img class="lang-icon" src="assets/icons/jp-flag.svg" alt="Japanese flag">
+                                <span>日本語</span>
+                                <svg class="checkmark invisible">
+                                    <use href="#icon-check"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <button class="nav-dropdown-toggle">
+                    <svg>
+                        <use href="#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main>
+            <section id="homepage">
+                <div class="heading-wrapper-outer">
+                    <div class="heading-wrapper-inner">
+                        <h1 id="homepage-heading" data-i18n="homepage.heading" data-has-inner-html>Sam<br>McLennan</h1>
+                        <p data-i18n="homepage.subheading">Software Developer | Educator | Language Enthusiast</p>    
+                    </div>
+                </div>
+                <img class="portrait-image" src="assets/images/self-portrait-no-background-cropped.png">
+            </section>
+            <section id="about-me">
+                <div class="section-inner">
+                    <div class="heading-wrapper">
+                        <h2 class="section-heading" data-i18n="aboutMe.heading">About Me</h2>
+                    </div>
+                    <p data-i18n="aboutMe.p1">I'm a self-taught programmer with a formal education in finance and hands-on experience across several fields, including electrical engineering and teaching.</p>
+                    <p data-i18n="aboutMe.p2">I first became interested in programming in 2024 when I discovered how writing a simple Python script could automate the process of creating flashcards for studying Japanese, saving me hours of repetitive copy-and-paste work.</p>
+                    <p data-i18n="aboutMe.p3">I was born in New Zealand and moved to Kagoshima, Japan in 2024, where I now live with my wife and our three-month-old son.</p>
+                </div>
+            </section>
+            <section id="my-skills">
+                <div class="section-inner">
+                    <div class="heading-wrapper">
+                        <h2 class="section-heading" data-i18n="mySkills.heading">My Skills</h2>
+                        <h4 class="section-subheading" data-i18n="mySkills.subheading">I have experience solving problems in the following languages</h4>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-wrapper">
+                            <img class="lang-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                            <div style="background-color: #3771a1;">Python</div>
+                        </li>
+                        <li class="skill-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <div style="background-color: #f0db4f; color: inherit">JavaScript</div>
+                        </li>
+                        <li class="skill-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <div style="background-color: #e44d26;">HTML</div>
+                        </li>
+                        <li class="skill-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                            <div style="background-color: #1572b6;">CSS</div>
+                        </li>
+                        <li class="skill-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                            <div style="background-color: #a9bacd;">C</div>
+                        </li>
+                        <li class="skill-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" />
+                            <div style="background-color: #2167ba;">R</div>
+                        </li>
+                        <li class="skill-wrapper">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
+                            <div style="background-color: #0b7fcc;">SQLite</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="my-projects">
+                <div class="heading-wrapper">
+                    <h2 class="section-heading" data-i18n="myProjects.heading">Projects</h2>
+                    <h4 class="section-subheading" data-i18n="myProjects.subheading">Below are some of the projects I've built so far</h4>
+                </div>
+                <div class="project">
+                    <div class="section-inner">
+                        <a class="project-img-hyperlink" href="https://english-vocab-challenge.pages.dev/" target="_blank">
+                            <img src="./assets//images/english_vocab_challenge.png" alt="Screenshot of my app 'English Vocab Challenge'">
+                        </a>
+                        <div class="project-content">
+                            <h3 data-i18n="myProjects.englishVocabChallenge.heading">English Vocab Challenge</h3>
+                            <p data-i18n="myProjects.englishVocabChallenge.body">An interactive, multimedia web application that helps Japanese learners of English practise their recognition and output skills. It features a modern, easy-to-use interface and offers a high degree of customization.</p>
+                            <div class="project-links">
+                                <a href="https://english-vocab-challenge.pages.dev/" target="_blank" data-i18n="myProjects.visitSiteButton">
+                                    Visit Site
+                                </a>
+                                <a href="https://github.com/sammclennan/english-vocab-challenge" target="_blank" data-i18n="myProjects.viewCodeButton">
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="section-inner">
+                        <a class="project-img-hyperlink" href="https://english-pronunciation-challenge.pages.dev/" target="_blank">
+                            <img src="./assets/images/english_pronunciation_challenge.png" alt="Screenshot of my app 'English Pronunciation Challenge'">
+                        </a>
+                        <div class="project-content">
+                            <h3 data-i18n="myProjects.englishPronunciationChallenge.heading">English Pronunciation Challenge</h3>
+                            <p data-i18n="myProjects.englishPronunciationChallenge.body">Originally a branch of English Vocab Challenge, this grew into a project of its own. It leverages the Web Speech API to allow users to improve their English pronunciation through an exciting time-based challenge.</p>
+                            <div class="project-links">
+                                <a href="https://english-pronunciation-challenge.pages.dev/" target="_blank" data-i18n="myProjects.visitSiteButton">
+                                    Visit Site
+                                </a>
+                                <a href="https://github.com/sammclennan/english-pronunciation-challenge" target="_blank" data-i18n="myProjects.viewCodeButton">
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="section-inner">
+                        <a class="project-img-hyperlink" href="https://sammclennan.github.io/countdown-timer/" target="_blank">
+                            <img src="./assets//images/countdown_timer.png" alt="Countdown Timer screenshot">
+                        </a>
+                        <div class="project-content">
+                            <h3 data-i18n="myProjects.countdownTimer.heading">Countdown Timer</h3>
+                            <p data-i18n="myProjects.countdownTimer.body">A minimalistic, modern countdown timer that employs various audio and visual effects to clearly convey the passage of time.</p>
+                            <div class="project-links">
+                                <a href="https://sammclennan.github.io/countdown-timer/" target="_blank" data-i18n="myProjects.visitSiteButton">
+                                    Visit Site
+                                </a>
+                                <a href="https://github.com/sammclennan/countdown-timer" target="_blank" data-i18n="myProjects.viewCodeButton">
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="section-inner">
+                        <a class="project-img-hyperlink" href="https://sammclennan.github.io/stopwatch/" target="_blank">
+                            <img src="./assets//images/stopwatch.png" alt="Stopwatch screenshot">
+                        </a>
+                        <div class="project-content">
+                            <h3 data-i18n="myProjects.stopwatch.heading">Stopwatch</h3>
+                            <p data-i18n="myProjects.stopwatch.body">An application that captures the essence of an analog stopwatch in appearance and functionality through code.</p>
+                            <div class="project-links">
+                                <a href="https://sammclennan.github.io/stopwatch/" target="_blank" data-i18n="myProjects.visitSiteButton">
+                                    Visit Site
+                                </a>
+                                <a href="https://github.com/sammclennan/stopwatch" target="_blank" data-i18n="myProjects.viewCodeButton">
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="section-inner">
+                        <a class="project-img-hyperlink" href="https://sammclennan.github.io/css-fireworks/" target="_blank">
+                            <img src="./assets//images/css_fireworks_display.png" alt="CSS Fireworks Display screenshot">
+                        </a>
+                        <div class="project-content">
+                            <h3 data-i18n="myProjects.cssFireworksDisplay.heading">CSS Fireworks Display</h3>
+                            <p data-i18n="myProjects.cssFireworksDisplay.body">An exploration of the possibilities of CSS to create dynamic animations and visual effects.</p>
+                            <div class="project-links">
+                                <a href="https://sammclennan.github.io/css-fireworks/" target="_blank" data-i18n="myProjects.visitSiteButton">
+                                    Visit Site
+                                </a>
+                                <a href="https://github.com/sammclennan/css-fireworks" target="_blank" data-i18n="myProjects.viewCodeButton">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="other-work">
+                <div class="section-inner">
+                    <div class="heading-wrapper">
+                        <h2 class="section-heading" data-i18n="otherWork.heading">Other Work</h2>
+                        <h4 class="section-subheading" data-i18n="otherWork.subheading">A selection of my other code repositories</h4>
+                    </div>
+                    <div id="project-carousel" class="carousel">
+                        <a id="slide-1" class="carousel-slide" href="https://github.com/sammclennan/cs50" target="_blank">
+                            <img src="./assets//images/cs50.jpg" alt="">
+                            <div class="description">
+                                <h4 data-i18n="otherWork.cs50.heading">CS50</h4>
+                                <p data-i18n="otherWork.cs50.body">My solutions to the problems from Harvard University's CS50: Introduction to Computer Science Course.</p>
+                            </div>
+                        </a>
+                        <a id="slide-2" class="carousel-slide" href="https://github.com/sammclennan/japanese-data-scrapers" target="_blank">
+                            <img src="./assets//images/jp_flashcard.png" alt="">
+                            <div class="description">
+                                <h4 data-i18n="otherWork.pythonScriptsForStudyingJapanese.heading">Python scripts for studying Japanese
+                                </h4>
+                                <p data-i18n="otherWork.pythonScriptsForStudyingJapanese.body">Various Python scripts for extracting, formatting and organizing Japanese language data for study.</p>
+                            </div>
+                        </a>
+                        <a id="slide-3" class="carousel-slide" href="https://github.com/sammclennan/big-book-of-small-python-projects" target="_blank">
+                            <img src="./assets//images/big_book_of_small_python_challenges.png" alt="">
+                            <div class="description">
+                                <h4 data-i18n="otherWork.bigBookOfSmallPythonProjects.heading">The Big Book of Small Python Projects</h4>
+                                <p data-i18n="otherWork.bigBookOfSmallPythonProjects.body">My own solutions to the 81 problems from the book "The Big Book of Small Python Projects" by Al Sweigart.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-controls">
+                        <button id="slide-carousel-left"></button>
+                        <button id="slide-carousel-right"></button>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-inner">
+                    <div class="heading-wrapper">
+                        <h2 class="section-heading" data-i18n="contactMe.heading">Contact Me</h2>
+                        <h4 class="section-subheading" data-i18n="contactMe.subheading">Feel free to get in touch</h4>
+                    </div>
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="d55b53ec-5c9d-40b6-a62d-31e95bb90173">
+                        <label for="name" data-i18n="contactMe.name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Name" data-i18n="contactMe.name" required>
+                        <label for="email" data-i18n="contactMe.email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Email" data-i18n="contactMe.email" required>
+                        <label for="message" data-i18n="contactMe.message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="5" data-i18n="contactMe.messagePlaceholder" required></textarea>
+                        <button type="submit" data-i18n="contactMe.sendButton">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div data-i18n="footer.copyrightText">&copy; Sam McLennan 2025</div>
+            <a href="https://github.com/sammclennan/" target="_blank">
+                <svg>
+                    <use href="#icon-github"></use>
+                </svg>
+            </a>
+        </footer>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-github" viewBox="0 0 16 16">
+                <path fill="currentColor"
+                    d="M8 .198a8 8 0 0 0-2.529 15.591c.4.074.547-.174.547-.385c0-.191-.008-.821-.011-1.489c-2.226.484-2.695-.944-2.695-.944c-.364-.925-.888-1.171-.888-1.171c-.726-.497.055-.486.055-.486c.803.056 1.226.824 1.226.824c.714 1.223 1.872.869 2.328.665c.072-.517.279-.87.508-1.07c-1.777-.202-3.645-.888-3.645-3.954c0-.873.313-1.587.824-2.147c-.083-.202-.357-1.015.077-2.117c0 0 .672-.215 2.201.82A7.672 7.672 0 0 1 8 4.066c.68.003 1.365.092 2.004.269c1.527-1.035 2.198-.82 2.198-.82c.435 1.102.162 1.916.079 2.117c.513.56.823 1.274.823 2.147c0 3.073-1.872 3.749-3.653 3.947c.287.248.543.735.543 1.481c0 1.07-.009 1.932-.009 2.195c0 .213.144.462.55.384A8 8 0 0 0 8.001.196z" />
+            </symbol>
+            <symbol id="icon-web" viewBox="0 0 24 24" fill="currentColor">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                    <path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12Z"/>
+                    <path d="M13 2.05S16 6 16 12c0 6-3 9.95-3 9.95m-2 0S8 18 8 12c0-6 3-9.95 3-9.95M2.63 15.5h18.74m-18.74-7h18.74"/>
+                </g>
+            </symbol>
+            <symbol id="icon-check" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20 7L10 17l-5-5" />
+            </symbol>
+            <symbol id="icon-menu" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h18M3 12h18M3 19h18"/>
+            </symbol>
+        </svg>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
