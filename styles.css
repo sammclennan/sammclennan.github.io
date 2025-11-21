@@ -910,7 +910,7 @@ svg {
     }
 }
 
-@media only screen and (max-aspect-ratio: 0.8) {
+@media only screen and (max-aspect-ratio: 4/5) {
     .portrait-image {
         height: 50%;
         left: unset;
@@ -936,7 +936,7 @@ svg {
     }
 }
 
-@media only screen and (max-aspect-ratio: 0.7) {
+@media only screen and (max-aspect-ratio: 7/10) {
     #homepage.en {
         font-size: 15vw;
     }
@@ -946,7 +946,7 @@ svg {
     }
 }
 
-@media only screen and (min-aspect-ratio: 1.8) {
+@media only screen and (min-aspect-ratio: 9/5) {
     #homepage.en {
         font-size: 7vw;
     }
@@ -956,7 +956,7 @@ svg {
     }
 }
 
-@media only screen and (min-aspect-ratio: 5) {
+@media only screen and (min-aspect-ratio: 5/1) {
     .portrait-image {
         display: none;
     }
