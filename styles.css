@@ -272,6 +272,7 @@ svg {
     background-color: transparent;
     border: 2px solid var(--color-charcoal);
     border-radius: 999px;
+    color: inherit;
     cursor: pointer;
     display: block;
     font-family: inherit;

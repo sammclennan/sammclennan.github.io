@@ -163,7 +163,3 @@ carouselControlRight.addEventListener('click', () => {
 mql.addEventListener('change', updateHomepageFormatting);
 
 document.addEventListener('DOMContentLoaded', init);
-
-window.addEventListener('load', () => {
-    alert(`Aspect ratio: ${window.innerWidth / window.innerHeight}`);
-});
