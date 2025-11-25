@@ -14,7 +14,7 @@ export const LANGUAGE_DATA = {
         },
         aboutMe: {
             heading: "About Me",
-            p1: "I'm a self-taught programmer with a formal education in finance and hands-on experience across several fields, including electrical engineering and teaching.",
+            p1: "I'm a self-taught software engineer with a formal education in finance and hands-on experience across several fields, including electrical engineering and teaching.",
             p2: "I first became interested in programming in 2024 when I discovered how writing a simple Python script could automate the process of creating flashcards for studying Japanese, saving me hours of repetitive copy-and-paste work.",
             p3:"I was born in New Zealand and moved to Kagoshima, Japan in 2024, where I now live with my wife and our three-month-old son.",
         },
@@ -29,7 +29,7 @@ export const LANGUAGE_DATA = {
             viewCodeButton: "View Code",
             englishVocabChallenge: {
                 heading: "English Vocab Challenge",
-                body: "An interactive, multimedia web application that helps Japanese learners of English practise their recognition and output skills. It features a modern, easy-to-use interface and offers a high degree of customization.",
+                body: "An interactive, multimedia web application designed to help Japanese students strengthen their English recognition and output skills. It features a modern, easy-to-use interface and offers extensive customization options.",
             },
             englishPronunciationChallenge: {
                 heading: "English Pronunciation Challenge",
@@ -41,7 +41,7 @@ export const LANGUAGE_DATA = {
             },
             stopwatch: {
                 heading: "Stopwatch",
-                body: "An application that captures the essence of an analog stopwatch in appearance and functionality through code.",
+                body: "An application that captures the essence of digital stopwatch in appearance and functionality through code.",
             },
             cssFireworksDisplay: {
                 heading: "CSS Fireworks Display",
@@ -121,7 +121,7 @@ export const LANGUAGE_DATA = {
             },
             stopwatch: {
                 heading: "ストップウォッチ",
-                body: "アナログストップウォッチの外観と機能をコードによって再現したアプリケーションです。",
+                body: "デジタルストップウォッチの外観と機能をコードによって再現したアプリケーションです。",
             },
             cssFireworksDisplay: {
                 heading: "CSS花火大会",
